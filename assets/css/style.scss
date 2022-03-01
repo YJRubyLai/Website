@@ -65,9 +65,12 @@ a.navbar-item.is-active {
     margin: auto 0.75rem!important;
 }
 .subtitle {
-    margin: auto 0.75rem!important
+    margin: auto 0.75rem!important;
     letter-spacing: 0.25rem;
     line-height: 2.5;
+}
+.biglineheight{
+    line-height: 50px;
 }
 
 #about {
