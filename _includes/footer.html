@@ -3,28 +3,6 @@
     <div class="container has-text-centered has-background-grey-darker" id="backtotop">
         <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
     </div>
-    <!--Footer Main Section-->
-    <div class="has-background-grey-darker">
-        <div class="container columns">
-            <!--Name Section-->
-            <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
-                            </figure>
-                        </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
             <!--Link Section-->
             <div class="column has-text-white">
                 <hr>
@@ -33,7 +11,7 @@
                  </h3>
                  <div class="column is-full is-size-2 is-marginless">
                 {% unless site.email == %}
-                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="has-text-black"><i class="fa fa-envelope"></i><a>
+                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="has-text-black"><i class="fa fa-envelope" style="color:white"></i><a>
                 {% endunless %}
                 {% unless site.linkedin_username ==  %}
                 <a href="http://www.linkedin.com/in/ying-ju-lai-4531091a0/" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i><a>
