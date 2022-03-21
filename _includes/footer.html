@@ -27,45 +27,21 @@
 
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>More Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
-                <li>
-                    <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
                 <hr>
                 <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
                  </h3>
                  <div class="column is-full is-size-2 is-marginless">
                 {% unless site.email == %}
-                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="has-text-black"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="has-text-black"><i class="fa fa-envelope"></i><a>
                 {% endunless %}
                 {% unless site.linkedin_username ==  %}
-                <a href="http://www.linkedin.com/in/ying-ju-lai-4531091a0/" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
+                <a href="http://www.linkedin.com/in/ying-ju-lai-4531091a0/" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i><a>
                 {% endunless %}
                 {% unless site.github_username ==  %}
-                <a href="http://www.github.com/YJRubyLai" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
+                <a href="http://www.github.com/YJRubyLai" target="_blank" class="has-text-black"><i class="fab fa-github"></i><a>
                 {% endunless %}
                  </div>
-
-            </div>
-            
-            
-
-            <!--Blog-post Section-->
-            <div class="column has-text-white">
-                <h3>Recent Posts</h3>
-                {% for post in site.posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
             </div>
         </div>
     </div>
