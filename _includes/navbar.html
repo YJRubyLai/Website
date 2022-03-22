@@ -7,9 +7,8 @@
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
                 Ying-Ju Lai
             </a>
-            <div class="text-align: center">
                 {% unless site.email == %}
-                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="is-size-4 has-text-white"><i class="fa fa-envelope" style="color:white"></i></a> &nbsp; &nbsp;
+                <a class="navbar-item nav-link disabled" href="mailto:yjrubylai@gmail.com" target="_blank" class="is-size-4 has-text-white"><i class="fa fa-envelope" style="color:white"></i></a> &nbsp; &nbsp;
                 {% endunless %}
                 {% unless site.linkedin_username ==  %}
                 <a href="http://www.linkedin.com/in/ying-ju-lai-4531091a0/" target="_blank" class="is-size-4 has-text-white"><i class="fab fa-linkedin" style="color:white"></i></a>  &nbsp; &nbsp;
@@ -17,7 +16,6 @@
                 {% unless site.github_username ==  %}
                 <a href="http://www.github.com/YJRubyLai" target="_blank" class="is-size-4 has-text-white"><i class="fab fa-github" style="color:white"></i></a>
                 {% endunless %}
-            </div>
             
             <div class="navbar-burger" data-target="navbar-menu">
                 <span></span>
