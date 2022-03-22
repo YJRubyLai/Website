@@ -6,22 +6,20 @@
     
     <div class="has-background-black has-text-centered has-text-white" id="credits">
        {{ "now" | date: "%Y" }} | 
-            <div class="container">
             <hr>
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
             </h3>
             <div class="column is-full is-size-2 is-marginless">
                 {% unless site.email == %}
-                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="has-text-black"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:yjrubylai@gmail.com" target="_blank" class="has-text-white"><i class="fa fa-envelope" style="color:white"></i></a>
                 {% endunless %}
                 {% unless site.linkedin_username ==  %}
-                <a href="http://www.linkedin.com/in/ying-ju-lai-4531091a0/" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
+                <a href="http://www.linkedin.com/in/ying-ju-lai-4531091a0/" target="_blank" class="has-text-black"><i class="fab fa-linkedin" style="color:white></i></a>
                 {% endunless %}
                 {% unless site.github_username ==  %}
-                <a href="http://www.github.com/YJRubyLai" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
+                <a href="http://www.github.com/YJRubyLai" target="_blank" class="has-text-black"><i class="fab fa-github" style="color:white></i></a>
                 {% endunless %}
             </div>
-        </div>
     </div>
 </footer>
